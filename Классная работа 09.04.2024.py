@@ -67,9 +67,7 @@ print("Одномерный массив количеств ненулевых �
 
 
 # Задание 43
-def ee(stolbii, strokii):
-    stolbi = stolbii
-    stroki = strokii
+def ee(stolbi, stroki):
     B = []
     nulevoy_spisok = []
     Ne_nulevoy_spisok = []
