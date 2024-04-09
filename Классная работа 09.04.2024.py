@@ -1,3 +1,4 @@
+import random
 #Задание 35 
 def generate_matrix():
     matrix = [[random.randint(-10, 10) for _ in range(4)] for _ in range(7)]
@@ -66,7 +67,6 @@ print("Одномерный массив количеств ненулевых �
 
 
 # Задание 43
-import random
 stolbi = 5
 stroki = 3
 B = []
