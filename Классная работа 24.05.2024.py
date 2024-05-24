@@ -1,9 +1,13 @@
-def print_args(var1=None, var2=None, var3=None):
-    args = {k: v for k, v in locals().items() if k.startswith('var')}
-    print("Переданы аргументы:", ', '.join(f"{k} = {v}" for k, v in args.items() if v is not None) or 'отсутствуют')
+from datetime import datetime
+from time import sleep
+
+def time_now(msg):
+    dt = datetime.now()
+    print(msg, dt)
 
 # Тесты
-print_args(var1=2)
-print_args(var2=3, var3=10)
-print_args()
-print_args(var1=None)
+time_now('Сейчас такое время: ')
+sleep(1)
+time_now('Прошла секунда: ')
+sleep(1)
+time_now("Ничего не понимаю... ")
