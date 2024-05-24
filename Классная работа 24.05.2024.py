@@ -1,13 +1,9 @@
-from datetime import datetime
-from time import sleep
-
-def time_now(msg):
-    dt = datetime.now()
-    print(msg, dt)
+def sum_range(start, end):
+    if start > end:
+        start, end = end, start
+    return sum(range(start, end + 1))
 
 # Тесты
-time_now('Сейчас такое время: ')
-sleep(1)
-time_now('Прошла секунда: ')
-sleep(1)
-time_now("Ничего не понимаю... ")
+print(sum_range(1, 5))  # 15
+print(sum_range(5, 1))  # 15
+print(sum_range(-3, 4))  # 4
